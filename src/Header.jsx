@@ -6,7 +6,7 @@ export default function Header({ changeEditAble, editAble,total}) {
         <div className="text-xl text-white font-bold w-full flex justify-between items-center p-[40px] gap-10">
           <div className="h-[65px] w-[35%] flex justify-between px-5 py-3 bg-gray-500 items-center">
             <div className="flex items-center gap-2">
-            <p className="w-[80px]">Budget:$</p>
+            <p className="w-[80px]">Budget: $</p>
             <input
               type="text"
               value={editAble}
@@ -15,7 +15,7 @@ export default function Header({ changeEditAble, editAble,total}) {
             />
             </div>
             <button
-              className="py-1 px-3 bg-blue-500 rounded-lg"
+              className="py-1 px-3 bg-blue-500 rounded-lg mt-5"
               onClick={() => { changeEditAble(editAble); }}
             >
               Edit
@@ -30,5 +30,5 @@ export default function Header({ changeEditAble, editAble,total}) {
         </div>
       </>
     );
-  }
+  };
   
