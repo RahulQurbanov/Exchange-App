@@ -1,6 +1,6 @@
-import { useEffect, useState } from "react"
-import Footer from "./Footer"
-import Header from "./Header"
+import { useEffect, useState } from "react";
+import Footer from "./Footer";
+import Header from "./Header";
 
 function App() {
   const [nameValue,setNameValue] = useState("");
@@ -12,8 +12,8 @@ function App() {
    function changeEditAble(newValue){
     if (newValue) {
       setEditAble(newValue); 
-    }
-   }
+    };
+   };
 
   function handleExprence(){
     if (costValue && nameValue) {
@@ -25,8 +25,9 @@ function App() {
       setNameValue("");
       setCostValue("");
       setTotal((prev)=>prev+parseFloat(costValue))
-    }
-  }
+    };
+  };
+  
   return (
     <>
     <div>
@@ -43,14 +44,14 @@ function App() {
             <p>X</p>
           </div>
         </div>
-        ))}
+        ))};
         
       </div>
       </div>
     </div>
     <Footer setNameValue={setNameValue} setCostValue={setCostValue} handleExprence={handleExprence} ></Footer>
     </>
-  )
-}
+  );
+};
 
 export default App
