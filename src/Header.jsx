@@ -1,5 +1,6 @@
 export default function Header({ changeEditAble, editAble,total}) {
-    const remaining = editAble-total
+    const remaining = editAble-total;
+    
     return (
       <>
         <h1 className="font-bold text-4xl align-center px-10 py-4">My Budget Planner</h1>
